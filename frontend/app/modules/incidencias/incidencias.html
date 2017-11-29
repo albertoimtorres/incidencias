@@ -1,0 +1,102 @@
+<h2><i class="fa fa-file" aria-hidden="true"></i> Reportar incidencia</h2>
+
+</br>
+
+<form class="form-horizontal form-label-left" name="vm.formIncidencia">
+
+  <div class="form-group">
+    <label for="incidente"> Incidencia </label>
+    <select class="form-control" ng-required="true" name="incidente" id="incidente" ng-model="vm.reporte.incidente" ng-options="item.clave as item.incidencia for item in vm.incidencias">
+    </select>
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.incidente.$valid == false && vm.mostrarTag == true && vm.formIncidencia.incidente.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <div class="form-group">
+    <label for="estado"> Estado </label>
+    <select class="form-control" ng-required="true" name="estado" id="estado" ng-model="vm.reporte.estado" ng-options="item.estado as item.estado for item in vm.estados" ng-change="vm.seleccionaEstado(vm.reporte.estado)">
+    </select>
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.estado.$valid == false && vm.mostrarTag == true && vm.formIncidencia.estado.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <div class="form-group">
+    <label for="municipio"> Municipio </label>
+    <select class="form-control" ng-required="true" name="municipio" id="municipio" ng-model="vm.reporte.municipio" ng-options="item.municipio as item.municipio for item in vm.municipios.municipios">
+    </select>
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.municipio.$valid == false && vm.mostrarTag == true && vm.formIncidencia.municipio.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <div class="form-group">
+    <label for="nombre"> Nombre completo </label>
+    <input type="text" name="nombre" ng-required="true" id="nombre" class="form-control" ng-model="vm.reporte.nombre" ng-pattern="vm.valida.textoEspacios.regex">
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.nombre.$valid == false && vm.mostrarTag == true && vm.formIncidencia.nombre.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <tag-error
+   ng-if="vm.formIncidencia.nombre.$valid == false && vm.mostrarTag == true && vm.formIncidencia.nombre.$error.required != true"
+   mensaje="vm.valida.textoEspacios.error">
+  </tag-error>
+
+  <div class="form-group">
+    <label for="email"> Email </label>
+    <input type="text" name="email" ng-required="true" id="email" class="form-control" ng-model="vm.reporte.email" ng-pattern="vm.valida.email.regex">
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.email.$valid == false && vm.mostrarTag == true && vm.formIncidencia.email.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <tag-error
+   ng-if="vm.formIncidencia.email.$valid == false && vm.mostrarTag == true && vm.formIncidencia.email.$error.required != true"
+   mensaje="vm.valida.email.error">
+  </tag-error>
+
+  <div class="form-group">
+    <label for="edad"> Edad </label>
+    <input type="text" maxlength="3" name="edad" ng-required="true" id="edad" class="form-control" ng-model="vm.reporte.edad" ng-pattern="vm.valida.numerico.regex">
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.edad.$valid == false && vm.mostrarTag == true && vm.formIncidencia.edad.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <tag-error
+   ng-if="vm.formIncidencia.edad.$valid == false && vm.mostrarTag == true && vm.formIncidencia.edad.$error.required != true"
+   mensaje="vm.valida.numerico.error">
+  </tag-error>
+
+  <div class="form-group">
+    <label for="descripcion"> Descripción de incidencia </label>
+    <textarea name="descripcion" ng-model="vm.reporte.descripcion" ng-required="true" id="descripcion" class="form-control" placeholder="Descripción de incidencia" rows="5" cols="5" ng-pattern="vm.valida.textoEspaciosEspeciales.regex"></textarea>
+  </div>
+
+  <tag-error
+   ng-if="vm.formIncidencia.descripcion.$valid == false && vm.mostrarTag == true && vm.formIncidencia.descripcion.$error.required == true"
+   mensaje="vm.valida.requerido.error">
+  </tag-error>
+
+  <tag-error
+   ng-if="vm.formIncidencia.descripcion.$valid == false && vm.mostrarTag == true && vm.formIncidencia.descripcion.$error.required != true"
+   mensaje="vm.valida.textoEspaciosEspeciales.error">
+  </tag-error>
+
+  <button type="button" name="enviar" id="enviar" class="btn btn-primary btn-lg" ng-click="vm.enviar()">Enviar</button>
+
+</form>

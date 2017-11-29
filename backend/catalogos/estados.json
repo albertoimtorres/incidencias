@@ -1,0 +1,134 @@
+{
+  "estados": [
+    {
+      "estado": "CDMX",
+      "municipios": [
+        {
+          "id": 1,
+          "municipio": "Alvaro Obregrón"
+        },
+        {
+          "id": 2,
+          "municipio": "Azcapotzalco"
+        },
+        {
+          "id": 3,
+          "municipio": "Benito Juárez"
+        },
+        {
+          "id": 4,
+          "municipio": "Coyoacán"
+        },
+        {
+          "id": 5,
+          "municipio": "Cuajimalpa de Morelos"
+        },
+        {
+          "id": 6,
+          "municipio": "Cuauhtemóc"
+        },
+        {
+          "id": 7,
+          "municipio": "Gustavo A. Madero"
+        },
+        {
+          "id": 8,
+          "municipio": "Iztacalco"
+        },
+        {
+          "id": 9,
+          "municipio": "Iztapalapa"
+        },
+        {
+          "id": 10,
+          "municipio": "La Magdalena Contreras"
+        },
+        {
+          "id": 11,
+          "municipio": "Miguel Hidalgo"
+        },
+        {
+          "id": 12,
+          "municipio": "Milpa Alta"
+        },
+        {
+          "id": 13,
+          "municipio": "Tláhuac"
+        },
+        {
+          "id": 14,
+          "municipio": "Tlalpan"
+        },
+        {
+          "id": 15,
+          "municipio": "Venustiano Carranza"
+        },
+        {
+          "id": 16,
+          "municipio": "Xochimilco"
+        }
+      ]
+    },
+    {
+      "estado": "Estado de México",
+      "municipios": [
+        {
+          "id": 1,
+          "municipio": "Ecatepec"
+        },
+        {
+          "id": 2,
+          "municipio": "Nezahualcóyotl"
+        },
+        {
+          "id": 3,
+          "municipio": "Naucalpan"
+        },
+        {
+          "id": 4,
+          "municipio": "Toluca"
+        },
+        {
+          "id": 5,
+          "municipio": "Tlalnepantla"
+        },
+        {
+          "id": 6,
+          "municipio": "Chimalhuacán"
+        },
+        {
+          "id": 7,
+          "municipio": "Tultitlán"
+        },
+        {
+          "id": 8,
+          "municipio": "Cuautitlán Izcalli"
+        },
+        {
+          "id": 9,
+          "municipio": "Atizapán de Zaragoza"
+        },
+        {
+          "id": 10,
+          "municipio": "Ixtapaluca"
+        },
+        {
+          "id": 11,
+          "municipio": "Nicolás Romero"
+        },
+        {
+          "id": 12,
+          "municipio": "Tecámac"
+        },
+        {
+          "id": 13,
+          "municipio": "Valle de Chalco Solidaridad"
+        },
+        {
+          "id": 14,
+          "municipio": "Coacalco de Berriozabal"
+        }
+      ]
+    }
+  ]
+}

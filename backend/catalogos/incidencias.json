@@ -1,0 +1,29 @@
+{
+  "incidencias": [
+    {
+      "id": 1,
+      "incidencia": "Alumbrado Público",
+      "clave": "001"
+    },
+    {
+      "id": 2,
+      "incidencia": "Via Pública",
+      "clave": "002"
+    },
+    {
+      "id": 3,
+      "incidencia": "Seguridad Pública",
+      "clave": "003"
+    },
+    {
+      "id": 4,
+      "incidencia": "Agua Potable",
+      "clave": "004"
+    },
+    {
+      "id": 5,
+      "incidencia": "Laborales",
+      "clave": "005"
+    }
+  ]
+}
